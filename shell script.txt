@@ -1,0 +1,68 @@
+shell script 
+ls
+cat
+vim 
+cd
+touch 
+ps -ef 
+grep
+
+
+1.wrt a sh sc to print the no of 
+
+2.wrt sc to print erroe from any remote log 
+curl followed with the url of the log file 
+
+Curl <ur> |grep name of the error
+
+3.WRT program 3 and 5 but not 15
+divisible by 3 &5 and not 15
+
+for i in {1..100}; do
+if (['expr $i % 3' == 0 ] || ['expr $i % 5' == 0 ]) && ['expr $i % 15' !=0];
+then 
+       echo $i
+fi;
+done
+
+4.occerence of the letter in sentence 
+
+grep -o "s" <<<"$x" | wc -l 
+
+5.wrt a command to shell script ?
+set -x 
+
+6.wrt a command to chrone tab in Linux and  how to provide a usage of it 
+-> Crontab Linux admin 
+
+reports node-> health 
+
+7. wrt command to read-only file.
+vim -r 
+
+8.diff Btn soft link and a hard link ?
+    ln source_file link_name
+
+9.
+
+
+
+
+Git and GitHub 
+1.version system controlling world 
+
+csv  (central version system)
+
+version controlled from the same place from the dev team 
+
+
+distributed control system 
+
+git vs git hub
+
+git is a opensource distributed version  
+
+git hub they have tried to improvise the git repository 
+
+ 
+ls -al to show the files from the 

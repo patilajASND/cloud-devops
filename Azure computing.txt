@@ -1,0 +1,39 @@
+Azure computing 
+
+
+1.Cloud Computing ?
+Delivery of on-demand computing resources over the internet on a pay-per-use basis
+
+Cloud Models
+●Public Cloud
+○Shared environment operated by a third-party provider○Computing resources are delivered on-demand, typically over the internet○Lower cost, less maintenance.
+
+
+●Private Cloud
+○Used exclusively by a business/organization○Services are delivered over a private network○Hosted by on-prem datacentersor dedicated hardware hosted by a third party provider –involves CAPEX○More control, higher flexibility, higher maintenance.
+
+
+
+Delivery modeles 
+
+on -prem as a private cloud 
+
+
+Azure tenant :- 
+- organization when they onboard to azure.
+-
+
+azure active Directory 
+-users/groups, Identity protection.
+- Management Groups
+           - polices,RBAC
+ 
+            =>Subscriptions.
+  
+               
+Azure virtual network 
+(10.0.0.0 -10.0.0.255)
+
+(virtual private network(subnet 1 (vmi1 web app private ip range is 10.0.0.4)nic network interface card to connect to vim 1  )(subnet 2)(subnet 3))
+
+
