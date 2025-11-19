@@ -66,3 +66,19 @@ git hub they have tried to improvise the git repository
 
  
 ls -al to show the files from the 
+
+
+git add status  
+
+git logs to check  the details of the 
+
+and we want to change the version we can do it from 
+
+git reset --hard version details
+
+git diff for any changes
+
+git status for the current status 
+
+git 
+
