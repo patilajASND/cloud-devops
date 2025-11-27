@@ -1,11 +1,12 @@
 shell script 
 ls
-cat
-vim 
+cat to print the file 
+vim to create and make it readme and writable
 cd
-touch 
-ps -ef 
-grep
+touch  to create the file 
+ps -ef to identify the process running  
+
+| grep pipe and grep to print the specifc 
 
 
 1.wrt a sh sc to print the no of 
@@ -68,6 +69,7 @@ git hub they have tried to improvise the git repository
 ls -al to show the files from the 
 
 
+<<<<<<< HEAD
 
 
 
@@ -117,4 +119,37 @@ git log --oneline  for the short commit logs
 
 
  
+=======
+git add status  
+
+git logs to check  the details of the 
+
+and we want to change the version we can do it from 
+
+git reset --hard version details
+
+git diff for any changes
+
+git status for the current status 
+
+git  
+
+
+git branching strategy 
+
+
+|
+|
+separation 
+|
+|
+feature branches 
+when a new feature is got into the branch so we create the new sub feature branches so it can be tested and 
+
+1.master branch 
+2.feature branch 
+3.release branch  for a stable 
+4.hot fix branches
+5.
+>>>>>>> f2e39ca71ba6a701c19727ac61201abb18f9ba82
 
