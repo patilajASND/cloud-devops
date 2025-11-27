@@ -66,3 +66,55 @@ git hub they have tried to improvise the git repository
 
  
 ls -al to show the files from the 
+
+
+
+
+
+ git init to make a repo
+
+git status for the status of the repo
+
+git add filename
+
+git status
+
+git diff to see the changes in the file 
+
+git checkout file name.sh to delete the file.
+
+
+
+git add 
+
+git commit 
+
+git push
+
+remote reference  
+
+git remote -v 
+
+
+to create the branch in git 
+git checkout -b division
+
+git checkout branch name to switch the branch
+
+
+
+-> to merge the branch chnages 
+
+we will do it first 
+
+git log branch name and copy the commit id
+
+git cheery-pick id of the commit for one or two commits
+
+
+git log --oneline  for the short commit logs
+
+
+
+ 
+

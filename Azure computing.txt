@@ -37,3 +37,17 @@ Azure virtual network
 (virtual private network(subnet 1 (vmi1 web app private ip range is 10.0.0.4)nic network interface card to connect to vim 1  )(subnet 2)(subnet 3))
 
 
+
+point to site connection .. 
+
+with in the vpn we have a vm and we want to connect the vm  as client we will connect to the vpn gateway which is public and then we will connect the vm through private ip 
+
+point to sale  
+sstp protocal
+
+
+Vnet1 -> peerings --> Initiate a peering with vnet2
+
+
+
+
