@@ -101,3 +101,30 @@ when a new feature is got into the branch so we create the new sub feature branc
 4.hot fix branches
 5.
 
+=========================================
+
+Ansible
+
+password less authentication for 
+
+ssh private Ip 
+
+
+ssh-keygen to create the file authentication file for 
+
+path for the ssh-keygen is /home/ubuntu/.ssh
+
+it is created the file 
+
+id_rsa is private
+
+id_rsa.pub is public key always take a public key for the use ..
+
+
+1. we created the private key and public  
+using the ssh-keygen 
+
+2.then copied the public key form the id_rsa.pub 
+
+3. created the target server and same we created the ssh-keygen private and pubic key .
+4.we vim the authorized_keys file and pasted the public key content in that.
