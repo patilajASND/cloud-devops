@@ -69,6 +69,57 @@ git hub they have tried to improvise the git repository
 ls -al to show the files from the 
 
 
+<<<<<<< HEAD
+
+
+
+ git init to make a repo
+
+git status for the status of the repo
+
+git add filename
+
+git status
+
+git diff to see the changes in the file 
+
+git checkout file name.sh to delete the file.
+
+
+
+git add 
+
+git commit 
+
+git push
+
+remote reference  
+
+git remote -v 
+
+
+to create the branch in git 
+git checkout -b division
+
+git checkout branch name to switch the branch
+
+
+
+-> to merge the branch chnages 
+
+we will do it first 
+
+git log branch name and copy the commit id
+
+git cheery-pick id of the commit for one or two commits
+
+
+git log --oneline  for the short commit logs
+
+
+
+ 
+=======
 git add status  
 
 git logs to check  the details of the 
@@ -100,6 +151,7 @@ when a new feature is got into the branch so we create the new sub feature branc
 3.release branch  for a stable 
 4.hot fix branches
 5.
+>>>>>>> f2e39ca71ba6a701c19727ac61201abb18f9ba82
 
 =========================================
 
