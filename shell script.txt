@@ -180,3 +180,57 @@ using the ssh-keygen
 
 3. created the target server and same we created the ssh-keygen private and pubic key .
 4.we vim the authorized_keys file and pasted the public key content in that.
+=================================================================================
+ansible commands 
+
+ansible -I inventory all -m "shell" -a "touch devopsclass".
+
+->command to see the no of process in the target server 
+->ansible -I inventory all -m "shell" -a "nproc". 
+->ansible -I inventory all -m "shell" -a "df" -- for the disk usage. 
+
+-> install the Nginx , and restart nginx 
+vim first-playbook.yml
+
+
+inside the play book 
+---
+-name:Install and Start nginx 
+ hosts:all
+ become:root
+
+ tasks:
+     -name:install nginx
+      apt:
+       name:nginx
+       state:present
+    -name:Start Nginx
+     service:
+       name:nginx
+       state:started
+  
+
+
+to run the playbook 
+
+ansible-playbook -I inventory first-playbook.yml
+
+======================
+ansible-playbook -vvv -I inventory first-playbook.yml
+
+==================================================
+ansible roles command :
+
+->ansible-galaxy role init Kubernetes
+ it will create the 
+
+============================
+->the playbook structure 
+templates
+files
+tasks
+handlers
+tests
+meta
+defaults
+vars
