@@ -1,12 +1,24 @@
 shell script 
-ls
+ls to list the file from the current path 
 cat to print the file 
 vim to create and make it readme and writable
 cd
 touch  to create the file 
 ps -ef to identify the process running  
-
+pwd the current path on which we are working 
 esc : wq! to save file
+
+
+
+
+
+
+
+
+
+
+
+
 
 | grep pipe and grep to print the specifc 
 
@@ -237,3 +249,5 @@ tests
 meta
 defaults
 vars
+
+

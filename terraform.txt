@@ -1,0 +1,43 @@
+
+first we need  to install the terraform 
+
+terraform init 
+
+
+
+
++++++++++++++++++++++++++++++++
+
+1.write define the infrastuructre
+2.plan review the changes terraform will make changes
+3.apply the 
+
+==============
+aws cli or authetticate the aws account 
+
+aws configure
+
+
+
+========================
+
+
+provider "aws"{
+
+region="eu-west-1"
+
+}
+resource "aws_s3_bucket" "first_bucket"{
+    bucket=""
+
+}
+
+resource "aws_instance" "app_server"{
+ami  ="ami-830c94e3"
+instance_type ="t2.micro"
+}
+
+
+
+
+
