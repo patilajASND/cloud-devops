@@ -1,0 +1,50 @@
+ Docker Introduction 
+
+   |
+   | 
+   |
+  introduction 
+
+  
+arcetecutre of the container |
+               |
+vm /ec2        |
+===            |
+Docker         |
+=====          |
+C1/c2/c3/c4/c5 |
+
+=========================
+
+Docker file -->image - -->containers
+
+
+Docker is containerization platform that provides easy way to containerize your applications which means using Docker you build container images run the images to create containers and also push these 
+
+======================
+docker architecture 
+Docker build 
+    | 
+Docker pull
+    |
+Docker run
+
+   |
+Docker host
+   |
+Registery
+
+
+========================
+Docker Demon
+    |
+    
+
+===============================
+Docker file install
+1.sudo apt update 
+2.sudo apt install docker.io -y 
+3.sudo systemctl status docker
+4.to give the permission to the ubuntu 
+ -->sudo usermod -aG docker ubuntu
+    

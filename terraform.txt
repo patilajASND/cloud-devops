@@ -40,4 +40,41 @@ instance_type ="t2.micro"
 
 
 
+===================================================================   
 
+to know the details of the resources created the output.tf file 
+
+====================================================================
+
+state file to track the resources and it is created automatically 
+terraform.tfstate 
+
+
+================================================================
+terraform setup
+genkins ->git ->aws
+           |
+           >amazon s3-->dynamo db
+
+==================================================================
+modules 
+
+-->existing moudules 
+
+-->write your own modules
+
+
+=============================
+
+challange with the terraform
+
+problems with the terraform
+-state file is single source of truth
+-manual chnages to the cloud provider cannot be identified snd autocorrected.
+-not a gitops friendly tool.don't play well with flux or argocd
+-can become very complex and difficult to manage 
+-trying to position as a configuration managment tool as well
+===============================================
+interview Q?A
+
+ 
