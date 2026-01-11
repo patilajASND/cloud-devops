@@ -47,4 +47,49 @@ Docker file install
 3.sudo systemctl status docker
 4.to give the permission to the ubuntu 
  -->sudo usermod -aG docker ubuntu
-    
+5.docker run hello-world
+6.docker build -t abhishekf5/my-first-docker-image:latest.
+7.list the images on the docker 
+8.docker run -it abhishekf5/my-first-docker-image.
+9.
+
+==============================================
+deploy the image form the docker hub or /registery
+#contanarization for Django application
+$django workflow application
+1. install Django 
+2.django-admin startproject (projectname).
+3. 
+ #########################################
+devops engineer role to containerization of Django application.
+1. is to write the docker file to containerization of the Django.
+
+in the Docker file 
+#FROM ubuntu
+
+#WORKDIR /app ---> working directry of te application or/ source code
+
+#COPY requirement.txt /app - -->to copy the requirement or/ dependences
+
+#COPY devops /app
+
+#RUN apt-get update && \
+
+
+
+
+entry point [not executable]
+
+&& CMD 
+
+once the Docker file is done 
+
+clone this repo to the machine then Proceed with the Docker Build steps
+
+-====================================
+building a image out of the artifact..
+
+1.build the image 
+2. before running the image give the access to the  port to the ec2 where your docker image 
+3.when ever we are running 
+ 

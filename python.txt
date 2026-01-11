@@ -1,0 +1,40 @@
+Use of the python
+
+shell vs phyton 
+|
+|
+|
+Linux 
+for the creation of the 
+website
+  |
+folders
+  |
+free disk    ---------->shell commands 
+  |
+memory 
+  |
+CPU health check 
+  |
+ 
+how to use the shell commands 
+  |
+write down the commands in the shell.sh file and then we can execute the commands by ./filename.sh
+  |
+primary purpose of the shell scripting is interact with shell script 
+
+
+=============================
+for the API related quires we use python scripting...
+
+ 
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+syllabus for python 
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+data types 
+1.string 
+2.numeric--1.int,2.float
+
+ 
