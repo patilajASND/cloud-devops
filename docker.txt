@@ -1,4 +1,4 @@
- Docker Introduction 
+  Docker Introduction 
 
    |
    | 
@@ -92,4 +92,13 @@ building a image out of the artifact..
 1.build the image 
 2. before running the image give the access to the  port to the ec2 where your docker image 
 3.when ever we are running 
- 
+
+
+//////////////////////////////////////////////////////////
+
+Docker commands once we have the DOcker file and 
+
+1.Docker build -t image(name)
+2.ls the images in the path 
+3.docker build -t nameofapp .
+4.git git git  
