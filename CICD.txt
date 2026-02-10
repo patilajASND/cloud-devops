@@ -1,0 +1,56 @@
+http://44.200.67.132:8080/ Jenkins---Ip address
+=============================
+CI/CD set up for the 
+
+app--> -------- customer 
+
+1.steps for the cicd
+2.unit testing 
+3.static code analysis
+4.code quality
+5.automation
+6.deployment of the application.
+7.reports.
+
+
+steps for the cicd
+
+1. v1 developer will submit to GitHub
+2.cicd tools as Jenkins.(for java use manven/junit/javoc
+$.sonar for the code quality /
+$.alm/reporting
+$.k8s/Docker/EC2)
+3.from Jenkins to deployment of the application to multi environment
+Dev/Stage/production..
+4. 
+///////////////////////////////////////////////////////////
+
+
+install of the Jenkins on the ec2//
+1.sudo apt update
+2.sudo apt update
+3.sudo apt install openjdk-17-jre 
+4.curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key |
+--> sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+-->echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian binary/ 
+--->sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null..
+-->sudo apt-get update
+-->sudo apt-get install Jenkins
+5. step is to get the password form the path .
+
+///////////////////////
+install the docker on the ec2 which we are using 
+we have to give access to the root user 
+1.sudo apt install docker.io
+2.is to give the permission to the docker demon(sudo su - 
+usermod -aG docker jenkins
+usermod -aG docker ubuntu
+systemctl restart docker) 
+--> it will switch to root user 
+3.then we can switch to the jenkins-- >su -Jenkins
+4. to check the docker is running the command is -->docker run hello-world.
+
+once the docker is installed --> restart the Jenkins ..

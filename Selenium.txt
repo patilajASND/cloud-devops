@@ -1,0 +1,815 @@
+--->to run the single test multiple times 
+we justg need to add the threadcount in the testng file....
+
+Locators  ---> 
+
+1.id 
+2.name
+3.linktext /Partiallinktext
+4.classname
+5.tagname
+
+
+/////////////////////////
+customized locators 
+
+css selectors------              xpath
+|                                  |
+|                                  |
+|                               absolute xpath
+tag&id                          relative xpath
+tag&class
+tag&attribute
+tag,class and attribute
+
+
+
+waits for the selenium driver 
+
+1. implicit wait 
+2.explicite wait 
+3.fluent wait 
+
+pom advantages of the 
+it enhances the code reusability maintainability 
+
+
+types of relative paths 
+
+1. //input[attribute='username']-- attribute and rag name
+
+2.//button[text()=submit]
+
+
+3.//button[contains(@id,'submit')] if the attribute  value changes partially eg:- dynamic id submit_button_123..
+4.
+
+
+
+
+
+
+
+selenium /////////////////////////
+what is automation testing 
+
+the process  of using specialized software tools and scripts to execute the pre-scripted tests on the application tather than relying on the manual human driven testing 
+
+2.what is agile ?Agile methodology is an iterative project management and software development approach that breaks projects into small, manageable cycles called "sprints"
+
+3. four pillars of the agile methodology?
+ Individuals and interactions over processes and tools, Working software over comprehensive documentation, Customer collaboration over contract negotiation, and Responding to change over following a plan, emphasizing people, tangible results, partnership, and adaptability to guide flexible, iterative development.
+
+
+SDLC and STLC 
+Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC) are important parts of software engineering. SDLC has a broad scope; it consists of 6 phases: requirement analysis, design, development, testing, deployment, and maintenance. On the other hand, STLC is a subset of SDLC. It has Focused scope, specially focus on the testing phase of SDLC. The Primary Goal of STLC is to ensure the quality, functionality and reliability of software through various testing activities.
+
+
+types of manual testing 
+
+Functional Testing: Confirms that application features work according to requirements.
+Non-Functional Testing: Evaluates performance, usability, reliability, and security.
+Regression Testing: Ensures that new code changes or bug fixes have not broken existing functionality.
+Exploratory Testing: Unscripted, tester-driven exploration to discover hidden defects or improve usability.
+Smoke Testing: A quick check of critical, core functionality to ensure the application is stable.
+Sanity Testing: Verifies specific, newly added, or fixed functionality after a change.
+User Acceptance Testing (UAT): Final testing by end-users to confirm the product meets business needs.
+Black-Box Testing: Testing functionality without knowing the internal code structure.
+White-Box Testing: Examining the internal logic, code, and structure.
+Grey-Box Testing: A combination where the tester has partial knowledge of internal structures.
+Usability Testing: Focuses on user-friendliness and experience.
+Ad-hoc Testing: Informal, unstructured testing without formal documentation or test cases. 
+
+
+
+
+error and bug 
+Parameter 	Error	Bug
+Definition	A human mistake, misconception, or misunderstanding made during the software development process.	
+.A flaw or defect in the software code that causes it to behave unexpectedly or incorrectly.
+Origin	.Caused by human factors such as coding mistakes, misinterpretation of requirements, or design issues.	
+The result of an underlying error in the code or design.
+Detection	
+Primarily detected by the developer during the coding or unit testing phase.	
+Typically detected by testers during the formal testing phases of the software development life cycle (SDLC).
+
+
+Test scenario for the lift elevator 
+
+Functional Test Cases
+Door Operation: Verify doors open/close correctly at floors, and the "open" button works while stationary.
+Floor Requests: Check if the elevator stops at all selected floors in the correct order.
+Button Responsiveness: Validate that all floor buttons (inside) and up/down buttons (outside) register properly.
+Weight Capacity: Verify the alarm sounds and doors stay open when the load exceeds maximum capacity.
+Sensor Functionality: Test that doors reopen if an object (e.g., person/hand) interrupts the sensors while closing. 
+
+Safety & Emergency Test Cases
+Power Failure: Ensure the lift does not free-fall; verify it stops, switches to emergency power, or descends to the nearest floor.
+Door Movement: Verify the lift does not move if the doors are open, and doors cannot be opened while in motion.
+Obstruction/Emergency Stop: Test that the lift stops immediately when the emergency stop button is pressed.
+Fire/Smoke: Verify that in fire mode, the lift goes to the ground floor, opens doors, and remains inactive. 
+
+Usability & Performance Test Cases
+Speed & Time: Measure the time taken to travel between floors and ensure it is within limits.
+Display & Audio: Confirm the floor indicator and voice announcements match the actual location.
+Interior Features: Test lights, fans, and emergency intercom functionality.
+User Accessibility: Verify buttons are accessible (e.g., Braille, correct height). 
+
+
+
+why API is used 
+APIs (Application Programming Interfaces) are used to enable different software programs to communicate and exchange data in a standardized, secure, and efficient way. 
+
+different types of api 
+The most common and widely used architectural style for web services. REST APIs use standard HTTP methods (GET, POST, PUT, DELETE) and are resource-oriented, making them flexible, scalable, and easy to use. They often use JSON for data exchange
+
+
+menthods used in apis 
+
+GET
+
+Purpose: Retrieve data
+
+Does not change server data
+
+Example:
+GET /users/1
+
+POST
+
+Purpose: Create new data
+
+Sends data in the request body
+
+Example:
+POST /users
+
+PUT
+
+Purpose: Update entire existing data
+
+Replaces the full resource
+
+Example:
+PUT /users/1
+
+PATCH
+
+Purpose: Update partial data
+
+Changes only specified fields
+
+Example:
+PATCH /users/1
+
+DELETE
+
+Purpose: Remove data
+
+Example:
+DELETE /users/1
+
+
+authentication and authorization 
+
+🔐 Authentication
+
+Authentication = verifying identity
+
+👉 It answers: “Who are you?”
+
+Checks if the user or system is valid
+
+Happens first
+
+Examples
+
+Username & password
+
+OTP
+
+API key
+
+Token (JWT)
+
+📌 API example:
+User logs in → API verifies credentials → returns a token
+
+🛂 Authorization
+
+Authorization = verifying permissions
+
+👉 It answers: “What are you allowed to do?”
+
+Checks access rights
+
+Happens after authentication
+
+Examples
+
+Admin vs normal user
+
+Read-only vs write access
+
+Allowed endpoints or HTTP methods
+
+
+automation framework 
+
+Test scripts – actual test cases
+
+Page Object Model (POM) – separates UI elements from test logic
+
+TestNG / JUnit – test execution & assertions
+
+Data-driven support – Excel, JSON, CSV
+
+Utilities – waits, screenshots, config readers
+
+Reports – Extent Reports, Allure
+
+Build tools – Maven or Gradle
+
+---->A Selenium framework is a structured automation architecture built on Selenium to make test scripts reusable, maintainable, and scalable.
+
+
+
+frame work details
+
+SeleniumAutomation/
+│
+├── pom.xml
+├── testng.xml
+├── README.md
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       ├── config/
+│   │       │   └── ConfigReader.java
+│   │       │
+│   │       ├── drivers/
+│   │       │   └── DriverFactory.java
+│   │       │
+│   │       ├── pages/
+│   │       │   ├── LoginPage.java
+│   │       │   ├── HomePage.java
+│   │       │   └── DashboardPage.java
+│   │       │
+│   │       └── utils/
+│   │           ├── WaitUtils.java
+│   │           ├── ScreenshotUtils.java
+│   │           ├── ExcelUtils.java
+│   │           └── LoggerUtils.java
+│   │
+│   └── test/
+│       └── java/
+│           ├── base/
+│           │   └── BaseTest.java
+│           │
+│           ├── tests/
+│           │   ├── LoginTest.java
+│           │   ├── DashboardTest.java
+│           │   └── RegressionTest.java
+│           │
+│           └── listeners/
+│               └── TestListener.java
+│
+├── src/
+│   └── test/
+│       └── resources/
+│           ├── config.properties
+│           ├── testdata/
+│           │   └── loginData.xlsx
+│           └── drivers/
+│               └── chromedriver.exe
+│
+├── reports/
+│   └── ExtentReport.html
+│
+├── logs/
+│   └── execution.log
+│
+└── screenshots/
+    └── failedTests/
+
+
+
+types of the framework 
+
+1️⃣ Linear (Record & Playback)
+
+Simple, not reusable
+
+❌ Not used in real projects
+
+2️⃣ Modular Framework
+
+Divide app into modules
+
+Some reusability
+
+3️⃣ Data-Driven Framework
+
+Test data stored externally
+
+Same test runs with multiple data sets
+
+4️⃣ Keyword-Driven Framework
+
+Actions like click, enterText
+
+Less coding, more configuration
+
+5️⃣ Hybrid Framework ⭐ (Most used)
+
+Combination of POM + Data-Driven + Keyword-Driven
+
+Best for real-world projects
+
+
+
+
+what is maven and why it is used for 
+
+Dependency Management
+
+You don’t need to download JAR files manually.
+
+You just add dependencies in pom.xml and Maven:
+
+Downloads required libraries
+
+Keeps versions consistent
+
+Example dependencies:
+
+Selenium
+
+TestNG
+
+Log4j
+
+Apache POI (Excel)
+
+2️⃣ Project Build
+
+Maven:
+
+Compiles code
+
+Runs tests
+
+Packages the project (JAR/WAR)
+
+All with one command:
+
+mvn clean test
+
+3️⃣ Standard Project Structure
+
+Maven enforces a fixed folder structure:
+
+src/main/java
+src/test/java
+src/test/resources
+
+
+This keeps projects clean and predictable.
+
+4️⃣ Test Execution
+
+Maven integrates with:
+
+TestNG
+
+JUnit
+
+Cucumber
+
+You can run:
+
+All tests
+
+Specific test suites
+
+Tests from CI/CD tools
+
+5️⃣ CI/CD Integration
+
+Maven works smoothly with:
+
+Jenkins
+
+GitHub Actions
+
+GitLab CI
+
+Perfect for automation pipelines.
+
+📄 What is pom.xml?
+
+The heart of Maven ❤️
+
+It contains:
+
+Project info
+
+Dependencies
+
+Plugins
+
+Build configurations
+
+
+
+What is a Web Element?
+
+A Web Element represents a single HTML element on a webpage.
+
+Examples:
+
+<input> → text field
+
+<button> → button
+
+<a> → link
+
+<select> → dropdown
+
+In Selenium, once you find an element, it becomes a Web Element object.
+
+
+
+java ----//////////////////////////////////////--------------
+
+An abstract class guarantees that all subclasses implement certain methods.
+
+Example idea:
+
+Every Animal must have makeSound()
+
+But each animal makes a different sound
+
+Without an abstract class, someone could forget to implement it and your program would break later.
+
+2. To share common code
+
+Abstract classes let you write common logic once and reuse it.
+
+abstract class Vehicle {
+    int speed;
+
+    void accelerate() {
+        speed += 10;
+    }
+
+    abstract void move();
+}
+
+
+All vehicles:
+
+Share speed
+
+Share accelerate()
+
+Implement move() differently
+
+Less duplication. Cleaner code.
+
+3. To prevent invalid objects
+
+Some things don’t make sense to exist on their own.
+
+You don’t want:
+
+new Vehicle(); // ❌ meaningless
+
+
+But you do want:
+
+new Car();
+new Bike();
+
+
+Abstract classes stop people (including future-you 😅) from misusing base classes.
+
+4. To support polymorphism
+
+You can write flexible code that works with many subclasses.
+
+void startJourney(Vehicle v) {
+    v.move();
+}
+
+
+This works for Car, Bike, Bus, etc.—without changing the method.
+
+5. When interfaces aren’t enough
+
+Use an abstract class when you need:
+
+Fields (state)
+
+Constructors
+
+Shared implementation
+
+Partial behavior + enforced rules
+
+Interfaces can’t do all of that (depending on language).
+
+In one sentence
+
+Abstract classes let you define “what must exist” and “what is already common” in one place—while stopping incomplete objects from being created
+//////////////////////////////////////////////////////////////////
+
+exception handling 
+
+checked exceptions
+unchecked exceptions
+error exception 
+
+. Checked Exception – File Not Found
+
+Real-life situation:
+You try to open a file, but the file doesn’t exist.
+
+Java example:
+
+try {
+    FileReader fr = new FileReader("data.txt");
+} catch (FileNotFoundException e) {
+    System.out.println("File not found. Please check the file name.");
+}
+
+
+Real-world meaning:
+➡ Like trying to open a document on your laptop that was deleted.
+
+2. Unchecked Exception – Divide by Zero
+
+Real-life situation:
+ATM tries to divide money among people, but number of people = 0.
+
+Java example:
+
+try {
+    int amount = 1000;
+    int people = 0;
+    int share = amount / people;
+} catch (ArithmeticException e) {
+    System.out.println("Number of people cannot be zero.");
+}
+
+
+Real-world meaning:
+➡ A logic mistake made by the programmer.
+
+3. NullPointerException – Missing Data
+
+Real-life situation:
+Calling someone whose phone number is not saved.
+
+Java example:
+
+String name = null;
+
+try {
+    System.out.println(name.length());
+} catch (NullPointerException e) {
+    System.out.println("Data not available.");
+}
+
+
+Real-world meaning:
+➡ Trying to use something that doesn’t exist.
+
+4. ArrayIndexOutOfBoundsException – Invalid Index
+
+Real-life situation:
+Trying to access seat number 10 in a bus that has only 5 seats.
+
+Java example:
+
+int seats[] = {1, 2, 3, 4, 5};
+
+try {
+    System.out.println(seats[10]);
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Seat number is invalid.");
+}
+
+5. NumberFormatException – Wrong Input
+
+Real-life situation:
+User enters "ten" instead of 10 in a form.
+
+Java example:
+
+try {
+    int age = Integer.parseInt("ten");
+} catch (NumberFormatException e) {
+    System.out.println("Please enter numbers only.");
+}
+
+6. SQLException – Database Error (Checked Exception)
+
+Real-life situation:
+ATM tries to connect to the bank server, but server is down.
+
+Java example:
+
+try {
+    Connection con = DriverManager.getConnection(url, user, pass);
+} catch (SQLException e) {
+    System.out.println("Database connection failed.");
+}
+
+7. Finally Block – Resource Cleanup
+
+Real-life situation:
+You close the door whether you enter or not.
+
+Java example:
+
+try {
+    int a = 10 / 2;
+} catch (Exception e) {
+    System.out.println("Error occurred");
+} finally {
+    System.out.println("Execution completed");
+}
+
+8. Custom Exception – Bank Balance
+
+Real-life situation:
+Withdraw more money than balance.
+
+Java example:
+
+class InsufficientBalanceException extends Exception {
+    InsufficientBalanceException(String msg) {
+        super(msg);
+    }
+}
+
+class Bank {
+    void withdraw(int amount) throws InsufficientBalanceException {
+        int balance = 5000;
+        if (amount > balance) {
+            throw new InsufficientBalanceException("Not enough balance");
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////
+
+Class and Object (Foundation)
+Class
+
+A class is a blueprint.
+
+class Car {
+    String color;
+    void drive() {
+        System.out.println("Car is driving");
+    }
+}
+
+Object
+
+An object is a real instance of a class.
+
+Car c = new Car();
+c.drive();
+
+2. Encapsulation (Data Hiding)
+What it means
+
+Wrapping data + methods together and hiding data using private.
+
+Why
+
+Protects data
+
+Improves security
+
+Controlled access
+
+Example
+class Account {
+    private int balance = 5000;
+
+    public int getBalance() {
+        return balance;
+    }
+}
+
+
+🔒 Balance cannot be accessed directly.
+
+3. Inheritance (Code Reusability)
+What it means
+
+One class inherits another class’s properties.
+
+Why
+
+Code reuse
+
+Avoid duplication
+
+Establish parent-child relationship
+
+Example
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle starts");
+    }
+}
+
+class Car extends Vehicle {
+    void drive() {
+        System.out.println("Car drives");
+    }
+}
+
+4. Polymorphism (Many Forms)
+What it means
+
+One method behaves differently in different situations.
+
+Types
+a) Compile-time (Method Overloading)
+class Math {
+    int add(int a, int b) {
+        return a + b;
+    }
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+b) Runtime (Method Overriding)
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+
+5. Abstraction (Hiding Implementation)
+What it means
+
+Showing what to do, not how to do it.
+
+Achieved by
+
+Abstract classes
+
+Interfaces
+
+Example
+abstract class Bank {
+    abstract void interestRate();
+}
+
+class SBI extends Bank {
+    void interestRate() {
+        System.out.println("6.5%");
+    }
+}
+
+
+
+////////////////////////////////////////////////////
+
+
+lists 
+
+Prefer List<WebElement> for findElements
+
+Use Set<String> to remove duplicates
+
+Use Map<String,String> for parameterized test data
+
+Avoid using List when uniqueness is required (use Set)
+
+Always initialize collections properly before use
+
+////////////////////////////// 
+execption handling and occurrence of exception
+
+Occurrence of an exception is the point in the program where an unexpected event arises during runtime, causing the normal flow to be disrupted.
+
+
+
+
+

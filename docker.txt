@@ -101,4 +101,4 @@ Docker commands once we have the DOcker file and
 1.Docker build -t image(name)
 2.ls the images in the path 
 3.docker build -t nameofapp .
-4.git git git  
+4.git 
